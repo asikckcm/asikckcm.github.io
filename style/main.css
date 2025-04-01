@@ -7,7 +7,7 @@ body {
 #main {
     width: 80%;
     height: 400px;
-    background-color: rgba(255,255,255,0.25);
+    background-color: rgba(0,0,0,0.25);
     backdrop-filter: blur(3px);
     margin: 0 auto;
     border-radius: 10px;
@@ -15,7 +15,11 @@ body {
     box-shadow: 10px 10px 10px 10px rgba(0,0,0,0.1);
     color: white;
     padding: 20px;
-
+}
+#tail {
+    color: rgba(255,255,255,0.5);
+    scale: 0.5;
+    text-align: center;
 }
 
 button {
@@ -29,9 +33,30 @@ button {
 button:hover {
     background-color: rgba(255,255,255,0.3);
     cursor: pointer;
+    transition: background-color 0.1s;
 }
-#tail {
-    color: rgba(255,255,255,0.5);
-    scale: 0.5;
-    text-align: center;
+
+button.danger {
+    border: 1px solid rgba(255,0,0,0.5);
+    background-color: rgba(255,0,0,0);
+    transition: background-color 0.1s;
+    border-radius: 10px;
+    color: white;
+}
+button.danger:hover {
+    background-color: rgba(255,0,0,0.3);
+    cursor: pointer;
+    transition: background-color 0.1s;
+}
+button.safe {
+    border: 1px solid rgba(0,255,255,0.5);
+    background-color: rgba(0,255,255,0);
+    transition: background-color 0.1s;
+    border-radius: 10px;
+    color: white;
+}
+button.safe:hover {
+    background-color: rgba(0,255,255,0.15);
+    cursor: pointer;
+    transition: background-color 0.1s;
 }

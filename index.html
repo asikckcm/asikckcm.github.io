@@ -2,19 +2,17 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8"/>
-  <title>asikckcm's Page</title>
+  <title>Hello!</title>
+  <script src="script/april.js"></script>
   <link type="text/css" rel="stylesheet" href="style/main.css"/>
 </head>
 <body>
   <div id="main">
-    <h1>asikckcm的个人页</h1>
-    <p>随便写的网页，做什么全凭兴趣。</p>
-
-    <a href="https://github.com/asikckcm/asikckcm.github.io">
-      <button style="width: 150px; height: 30px">在GitHub上查看源码</button></a>
-
-    <p>这是一些小功能</p>
-    <button style="width: 100px; height: 30px">密码破解</button>
+    <h1>欢迎！</h1>
+    <button class="danger" onclick="bomb()">千万别点</button>
+    <button onclick="bomb()">一个按钮</button>
+    <button class="safe" onclick="bomb()">一定要点</button>
+    <p id="message"></p>
   </div>
   <p id="tail">By asikckcm & On GitHub Pages &
     <span onclick="alert('这你也能发现？\n你没看代码吧...')">Firefly for love</span></p>
