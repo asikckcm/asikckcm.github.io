@@ -8,13 +8,17 @@
 </head>
 <body>
   <div id="main">
+    <div class="warning">
+      <p style="display: inline">本页面已归档<br/>查看源代码：
+      <a href="https://github.com/asikckcm/asikckcm.github.io/tree/april-fools-day">GitHub</a></p>
+    </div>
     <h1>欢迎！</h1>
-    <button class="danger" onclick="bomb()">千万别点</button>
-    <button onclick="bomb()">一个按钮</button>
-    <button class="safe" onclick="bomb()">一定要点</button>
+    <button class="danger" onclick="bomb('谁让你点的')">千万别点</button>
+    <button onclick="bomb('就直接点了？')">一个按钮</button>
+    <button class="safe" onclick="bomb('叫你点你就点？')">一定要点</button>
     <p id="message"></p>
   </div>
   <p id="tail">By asikckcm & On GitHub Pages &
-    <span onclick="alert('这你也能发现？\n你没看代码吧...')">Firefly for love</span></p>
+    <span onclick="end_click()">Firefly for love</span></p>
 </body>
 </html>
