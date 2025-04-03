@@ -1,24 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"/>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="/style/main.css" type="text/css">
+  <script src="/script/kfc-crazy-thursday.js"></script>
   <title>Hello!</title>
-  <script src="script/april.js"></script>
-  <link type="text/css" rel="stylesheet" href="style/main.css"/>
 </head>
-<body>
-  <div id="main">
-    <div class="warning">
-      <p style="display: inline">本页面已归档<br/>查看源代码：
-      <a href="https://github.com/asikckcm/asikckcm.github.io/tree/april-fools-day">GitHub</a></p>
-    </div>
+<body onload="detectCrazy()">
+  <div class="main">
+    <div id="head_tip"></div>
     <h1>欢迎！</h1>
-    <button class="danger" onclick="bomb('谁让你点的')">千万别点</button>
-    <button onclick="bomb('就直接点了？')">一个按钮</button>
-    <button class="safe" onclick="bomb('叫你点你就点？')">一定要点</button>
-    <p id="message"></p>
+    <p>这是个人页面<br/>随便写写得了</p>
+    <a href="https://github.com/asikckcm/asikckcm.github.io"><button style="width: 100px; height: 50px">源代码</button></a>
+    <a href="/archivist.html"><button style="width: 100px; height: 50px">已归档页面</button></a>
   </div>
-  <p id="tail">By asikckcm & On GitHub Pages &
-    <span onclick="end_click()">Firefly for love</span></p>
 </body>
+
 </html>
